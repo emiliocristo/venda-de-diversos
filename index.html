@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prateleiras & Diversos</title>
+    <link rel="stylesheet" href="css/detalhe.css">
+</head>
+<body>
+
+    
+
+        <div class="container-nav">
+
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="images/logo.png" width="125px">
+                </a>
+                </div>
+
+                <nav> 
+                    <ul id="MenuItems">
+                        <li><a href="index.html"> </a></li>
+                    </ul>
+                </nav>
+            </a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" > 
+            </div>
+        </div>
+    
+    <!---------------------------------Detalhes------------------------------------------->
+        <div class="small-container single">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/gallery-1.jpg" width="100%" id="ProductImg">
+
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/gallery-1.jpg" width="100%" class="small-img">
+                        </div>
+
+                        <div class="small-img-col">
+                            <img src="images/gallery-2.jpg" width="100%" class="small-img">
+                        </div>
+
+                        <div class="small-img-col">
+                            <img src="images/gallery-3.jpg" width="100%" class="small-img">
+                        </div>
+
+                        <div class="small-img-col">
+                            <img src="images/gallery-4.jpg" width="100%" class="small-img">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-2">
+                
+                    <h1>Prateleiras</h1>
+                    <h4>Preços a partir de <span> 100.000 kz </span> </h4>
+                  
+                    <a href="" class="btn-buy">Comprar</a>
+                    <span> <a href="" class="btn">Quero Desconto</a></span>
+                    <h3>Detalhes</h3>
+                    <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ipsa eaque quae quod quos nesciunt. Dolor
+                        orem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ipsa eaque quae quod quos nesciunt. Dolor
+                        .</p>
+                </div>
+            </div>
+        </div>
+
+
+    <!---------------------------------Footer----------------------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+              
+
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" >
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Unde assumenda pariatur culpa ducimus. Esse, rerum.</p>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Links Uteis</h3>
+                    <ul>
+                        <li>Blog</li>
+                        <li>Politica de retorno</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li>Facebook</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+            <p class="copyright" > Copyright 2021 - Sissena Tecnologia</p>
+        </div>
+    </div>
+
+    <!---------------------------------jAVASCRIPT para menu----------------------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+
+        }
+    </script>
+
+    <!---------------------------------jAVASCRIPT para detalhes----------------------------------->
+    <script>
+
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+        SmallImg[1].onclick = function()
+            {
+                ProductImg.src = SmallImg[1].src;
+            }  
+        SmallImg[2].onclick = function()
+            {
+                ProductImg.src = SmallImg[2].src;
+            }  
+        SmallImg[3].onclick = function()
+            {
+                ProductImg.src = SmallImg[3].src;
+            }    
+    
+    </script>
+
+
+</body>
+</html> 

@@ -1,0 +1,28 @@
+body{
+    background: #2bb673;
+}
+
+.col-sm-10{
+    background: #fff;
+    height: 100vh;
+}
+
+.col-sm-2{
+    height: 100vh;
+}
+
+#side_menu a{
+    color: #fff;
+}
+
+#side_menu .active a {
+    color: #2bb673;
+    background: #fff;
+    font-weight: bold;
+}
+
+#side_menu a:hover{
+    color: #000;
+    font-weight: bold;
+    display: block;
+}
